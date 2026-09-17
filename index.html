@@ -7,7 +7,7 @@
 
 <title>Ilyash Ganee AC Service Goa | AC Repair & Service</title>
 
-<meta name="description" content="Ilyash Ganee AC Service Goa provides AC repair, AC servicing, AC installation, gas filling and maintenance in Porvorim, Mapusa, Siolim, Morjim and nearby areas. Call 919263570738.">
+<meta name="description" content="Ilyash Ganee AC Service Goa provides AC repair, AC servicing, AC installation, gas filling and maintenance across Goa including Porvorim, Mapusa, Siolim, Morjim, Anjuna, Panaji and nearby areas.">
 
 <meta name="keywords" content="AC service Goa, AC repair Goa, AC servicing Goa, AC installation Goa, AC gas filling Goa, AC technician Goa, AC repair Porvorim, AC service Mapusa, AC service Siolim, AC service Morjim">
 
@@ -15,114 +15,642 @@
 <meta name="author" content="Ilyash Ganee">
 
 <meta property="og:title" content="Ilyash Ganee AC Service Goa | AC Repair & Service">
-<meta property="og:description" content="Professional AC repair, servicing, installation and gas filling in Goa.">
+<meta property="og:description" content="AC repair, servicing, installation, gas filling and maintenance across Goa.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ac-service-goa.netlify.app/">
 
 <style>
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f4f9ff;
+    color: #102a43;
+}
+
+header {
+    background: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0876d1;
+}
+
+nav a {
+    text-decoration: none;
     color: #123;
-    text-align: center;
+    margin-left: 15px;
+    font-weight: bold;
 }
 
 .hero {
-    padding: 60px 20px 40px;
-    background: white;
+    background: linear-gradient(135deg, #eaf7ff, #ffffff);
+    padding: 65px 20px 55px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    background: #0876d1;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 h1 {
     color: #0876d1;
-    font-size: 32px;
-    margin-bottom: 12px;
+    font-size: 38px;
+    margin: 10px auto;
+    max-width: 850px;
 }
 
-p {
-    font-size: 18px;
+.hero p {
+    font-size: 19px;
     line-height: 1.6;
+    margin: 8px auto;
+    max-width: 700px;
 }
 
-.services {
-    padding: 25px 20px;
+.buttons {
+    margin-top: 25px;
 }
 
-.service {
-    background: white;
-    margin: 12px auto;
-    padding: 18px;
-    max-width: 400px;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-    font-size: 17px;
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 23px;
+    border-radius: 30px;
+    margin: 6px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.call {
+    background: #0876d1;
+    color: white;
+}
+
+.section {
+    padding: 45px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 30px;
+    color: #0876d1;
+    margin-bottom: 10px;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 18px;
+}
+
+.card h3 {
+    margin: 0 0 8px;
+    color: #0876d1;
+    font-size: 21px;
+}
+
+.card p {
+    line-height: 1.55;
+    color: #445;
+}
+
+.book {
     display: inline-block;
-    margin: 20px;
-    padding: 16px 28px;
+    margin-top: 8px;
     background: #25D366;
     color: white;
     text-decoration: none;
-    border-radius: 30px;
-    font-size: 19px;
+    padding: 11px 17px;
+    border-radius: 25px;
     font-weight: bold;
 }
 
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+}
+
+.media-grid img,
+.media-grid video {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    background: white;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.areas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.area {
+    background: white;
+    padding: 12px 17px;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    font-weight: bold;
+}
+
+.info-box {
+    background: white;
+    padding: 28px 20px;
+    border-radius: 18px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.08);
+    max-width: 850px;
+    margin: auto;
+}
+
+.info-box p {
+    line-height: 1.7;
+}
+
+.contact {
+    background: #eaf7ff;
+}
+
 footer {
-    padding: 25px;
-    font-size: 14px;
-    color: #666;
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 28px 20px;
+}
+
+footer p {
+    margin: 7px;
+}
+
+.float-buttons {
+    position: fixed;
+    right: 15px;
+    bottom: 18px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.float-buttons a {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+}
+
+.float-wa {
+    background: #25D366;
+}
+
+.float-call {
+    background: #0876d1;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .section {
+        padding: 35px 15px;
+    }
 }
 </style>
 </head>
 
 <body>
-<h2>Our AC Service Work</h2>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;padding:20px;">
+<header>
+    <div class="logo">Ilyash Ganee AC Service Goa</div>
 
-  <img src="image1.png" alt="AC service and repair in Goa"
-       style="width:100%;border-radius:12px;">
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#areas">Goa Areas</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-  <img src="image2.png" alt="AC PCB repair service in Goa"
-       style="width:100%;border-radius:12px;">
+<section class="hero" id="home">
+    <span class="badge">❄️ ALL OVER GOA SERVICE AVAILABLE</span>
 
-  <img src="image3.png" alt="AC outdoor service in Goa"
-       style="width:100%;border-radius:12px;">
-
-  <video controls style="width:100%;border-radius:12px;">
-    <source src="video1.mp4" type="video/mp4">
-  </video>
-
-  <video controls style="width:100%;border-radius:12px;">
-    <source src="video2.mp4" type="video/mp4">
-  </video>
-
-</div>
-<section class="hero">
     <h1>Ilyash Ganee AC Service Goa</h1>
-    <p>AC Repair, Installation & Service in Goa</p>
-    <p>Fast • Reliable • Professional</p>
 
-    <a class="whatsapp" href="https://wa.me/919263570738">
-        💬 Book Service on WhatsApp
-    </a>
+    <p><strong>AC Repair, Installation, Cleaning & Maintenance in Goa</strong></p>
+
+    <p>
+        Professional AC service for homes, shops, offices and other properties
+        across Goa.
+    </p>
+
+    <div class="buttons">
+        <a class="btn whatsapp"
+           href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20service%20in%20Goa.">
+           💬 Book Service on WhatsApp
+        </a>
+
+        <a class="btn call" href="tel:+919263570738">
+           📞 Call Now
+        </a>
+    </div>
 </section>
 
-<section class="services">
-    <h2>Our Services</h2>
 
-    <div class="service">❄️ AC Repair</div>
-    <div class="service">🔧 AC Installation</div>
-    <div class="service">🧊 AC Gas Filling</div>
-    <div class="service">✨ AC Cleaning & Service</div>
+<section class="section" id="services">
+
+    <h2>Our AC Services</h2>
+
+    <p class="section-intro">
+        Choose the AC service you need and contact us directly on WhatsApp.
+    </p>
+
+    <div class="services-grid">
+
+        <div class="card">
+            <img src="image1.png" alt="Normal AC service in Goa">
+            <div class="card-content">
+                <h3>❄️ Normal AC Service</h3>
+                <p>Routine AC cleaning and service to help maintain proper airflow and operation.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20Normal%20AC%20Service%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image2.png" alt="AC PCB repair in Goa">
+            <div class="card-content">
+                <h3>🔧 PCB Repair</h3>
+                <p>AC PCB checking and repair service for suitable AC control boards.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20PCB%20Repair%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image3.png" alt="AC outdoor service in Goa">
+            <div class="card-content">
+                <h3>✨ Filter Cleaning</h3>
+                <p>AC filter cleaning to remove dust and help maintain clean airflow.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20Filter%20Cleaning%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image1.png" alt="AC deep cleaning service in Goa">
+            <div class="card-content">
+                <h3>💦 Jet / Deep Cleaning</h3>
+                <p>Detailed AC cleaning for indoor and outdoor unit components as required.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20Jet%20Deep%20Cleaning%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image3.png" alt="AC gas check and charging in Goa">
+            <div class="card-content">
+                <h3>🧊 Gas Check & Charging</h3>
+                <p>AC refrigerant checking and charging service when required.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20Gas%20Check%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image1.png" alt="AC performance check in Goa">
+            <div class="card-content">
+                <h3>📊 Performance Check</h3>
+                <p>Basic AC operation and cooling performance checking.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20Performance%20Check%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image3.png" alt="AC cooling problem repair in Goa">
+            <div class="card-content">
+                <h3>🌡️ Cooling Problem</h3>
+                <p>Checking of common causes when an AC is not cooling properly.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20my%20AC%20has%20a%20Cooling%20Problem%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image1.png" alt="AC water leakage repair in Goa">
+            <div class="card-content">
+                <h3>💧 Water Leakage Repair</h3>
+                <p>Checking common causes of water leakage from the AC indoor unit.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20Water%20Leakage%20Repair%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image2.png" alt="Inverter PCB repair in Goa">
+            <div class="card-content">
+                <h3>⚡ Inverter PCB Repair</h3>
+                <p>Inverter AC PCB checking and repair service where applicable.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20Inverter%20AC%20PCB%20Repair%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image2.png" alt="AC electrical checking in Goa">
+            <div class="card-content">
+                <h3>🔌 Electrical Checking</h3>
+                <p>Checking of AC electrical connections and related electrical issues.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20Electrical%20Checking%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image3.png" alt="AC gas leakage testing in Goa">
+            <div class="card-content">
+                <h3>🔍 Gas Leakage Testing</h3>
+                <p>Checking for possible refrigerant leakage when gas loss is suspected.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20Gas%20Leakage%20Testing%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image1.png" alt="AC installation in Goa">
+            <div class="card-content">
+                <h3>🛠️ AC Installation</h3>
+                <p>Split and other suitable AC installation service across Goa.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20Installation%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image3.png" alt="AC uninstallation shifting in Goa">
+            <div class="card-content">
+                <h3>📦 AC Uninstallation / Shifting</h3>
+                <p>AC removal and shifting support for relocation or replacement work.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20Uninstallation%20or%20Shifting%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image1.png" alt="AC fan motor repair in Goa">
+            <div class="card-content">
+                <h3>🌀 Fan / Motor Repair</h3>
+                <p>Checking of AC fan and motor related problems.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20Fan%20Motor%20Repair%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image2.png" alt="AC compressor checking in Goa">
+            <div class="card-content">
+                <h3>🔩 Compressor Checking</h3>
+                <p>Basic compressor-related checking and fault diagnosis.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20Compressor%20Checking%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image3.png" alt="AC copper pipe work in Goa">
+            <div class="card-content">
+                <h3>🔧 Copper Pipe Work</h3>
+                <p>AC copper pipe work and related installation requirements.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20Copper%20Pipe%20Work%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image1.png" alt="Split AC service in Goa">
+            <div class="card-content">
+                <h3>🏠 Split AC Service</h3>
+                <p>Service and repair support for split AC systems.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20Split%20AC%20Service%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image3.png" alt="Window AC service in Goa">
+            <div class="card-content">
+                <h3>🪟 Window AC Service</h3>
+                <p>Cleaning, checking and repair support for window AC units.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20Window%20AC%20Service%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image1.png" alt="Cassette AC service in Goa">
+            <div class="card-content">
+                <h3>🏢 Ceiling Cassette AC</h3>
+                <p>Service and maintenance support for ceiling cassette AC systems.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20Cassette%20AC%20Service%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image3.png" alt="Commercial AC service in Goa">
+            <div class="card-content">
+                <h3>🏬 Commercial AC Service</h3>
+                <p>AC service and checking support for shops, offices and commercial spaces.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20Commercial%20AC%20Service%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image2.png" alt="AC maintenance in Goa">
+            <div class="card-content">
+                <h3>🔧 AC Maintenance</h3>
+                <p>Regular maintenance and checking to help keep your AC operating properly.</p>
+                <a class="book" href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20Maintenance%20in%20Goa.">Book Now</a>
+            </div>
+        </div>
+
+    </div>
 </section>
+
+
+<section class="section">
+    <h2>Our AC Service Work</h2>
+
+    <p class="section-intro">
+        Photos and videos from AC service work.
+    </p>
+
+    <div class="media-grid">
+        <img src="image1.png" alt="Ilyash Ganee AC service work in Goa">
+        <img src="image2.png" alt="Ilyash Ganee AC PCB repair work in Goa">
+        <img src="image3.png" alt="Ilyash Ganee AC outdoor service work in Goa">
+
+        <video controls>
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+        <video controls>
+            <source src="video2.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </div>
+</section>
+
+
+<section class="section" id="areas">
+
+    <h2>AC Service Available Across Goa</h2>
+
+    <div class="info-box">
+        <p>
+            Ilyash Ganee AC Service provides AC repair, servicing,
+            installation and maintenance across Goa.
+        </p>
+
+        <div class="areas">
+            <span class="area">Porvorim</span>
+            <span class="area">Panaji</span>
+            <span class="area">Mapusa</span>
+            <span class="area">Siolim</span>
+            <span class="area">Morjim</span>
+            <span class="area">Anjuna</span>
+            <span class="area">Old Goa</span>
+            <span class="area">Aldona</span>
+            <span class="area">North Goa</span>
+            <span class="area">South Goa</span>
+            <span class="area">All Goa</span>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="section contact" id="contact">
+
+    <h2>Book Your AC Service</h2>
+
+    <div class="info-box">
+
+        <p>
+            Need AC repair, cleaning, gas checking, installation,
+            PCB repair or maintenance?
+        </p>
+
+        <p>
+            <strong>Ilyash Ganee AC Service Goa</strong>
+        </p>
+
+        <p>
+            📞 +91 9263570738
+        </p>
+
+        <div class="buttons">
+
+            <a class="btn whatsapp"
+               href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20want%20to%20book%20AC%20service%20in%20Goa.">
+               💬 WhatsApp
+            </a>
+
+            <a class="btn call" href="tel:+919263570738">
+               📞 Call Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 <footer>
-    © 2026 Ilyash Ganee AC Service Goa
+    <p><strong>Ilyash Ganee AC Service Goa</strong></p>
+    <p>AC Repair • Service • Installation • Maintenance</p>
+    <p>All Over Goa Service Available</p>
+    <p>© 2026 Ilyash Ganee AC Service Goa</p>
 </footer>
 
+
+<div class="float-buttons">
+
+    <a class="float-wa"
+       href="https://wa.me/919263570738?text=Hello%20Ilyash%20Ganee%2C%20I%20need%20AC%20service%20in%20Goa."
+       aria-label="WhatsApp">
+       💬
+    </a>
+
+    <a class="float-call"
+       href="tel:+919263570738"
+       aria-label="Call">
+       📞
+    </a>
+
+</div>
+
 </body>
-</html>
+                </html>
